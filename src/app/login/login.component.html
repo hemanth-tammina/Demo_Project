@@ -1,23 +1,16 @@
-
-<mat-card class="example-card">
-  <mat-card-header>
-    <mat-card-title>Login</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form class="example-form">
-      <table class="example-full-width" cellspacing="0">
-        <tr>
-          <td>
-            <mat-form-field class="example-full-width">
-            <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
-            </mat-form-field>
-          </td>
-        </tr>
-        <tr>
-        <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
-        </mat-form-field></td>
-       
-      </tr></table>
-      <button [routerLink]="['/dashboard']">Login</button>
-
+<div class="lg-page">
+    <div class="login">
+    <h1>Login</h1>
+</div>
+<div class="container">
+    <form class="login-form">
+         <label for="uname">Username:</label>&nbsp;
+        <input type="text" name="uname"><br><br>
+        <label for="pwd">Password:</label>&nbsp;
+        <input type="text" name="pwd"><br><br>
+    </form>
+    <div class="login-btn">
+      <button type="button" class="btn btn-primary"[routerLink]="['/dashboard']">Login</button>
+    </div>
+</div>
+</div>
